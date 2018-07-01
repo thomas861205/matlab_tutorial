@@ -141,5 +141,41 @@ csvwrite('name.csv', A)
 % .mat
 
 save('my_workspace.mat')
+save('my_workspace.mat', 'var1', 'var2')
 
 load('my_workspace.mat')
+
+
+
+
+
+
+% more about plotting
+
+% subplot(row, col, order)
+
+x = linspace(0, 2*pi, 100);
+y = sin(x)
+z = y + randn(1, 100)
+
+subplot(2, 1, 1);
+plot(x, y);
+title('')
+xlabel('')
+
+subplot(2, 1, 2);
+plot(x, z);
+
+% 3D plot
+
+z = randn(100, 100)
+
+surf(z) % 3D with colors
+contour(z) % 2D with colors
+
+
+%%%%%%%%sound processing%%%%%%%%
+
+
+
+
