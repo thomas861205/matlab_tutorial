@@ -203,3 +203,16 @@ d4 = downsample(d, 2)
 
 
 % FFT
+
+y = fft(x)
+plot(real(y))
+
+% spectrogram
+
+spectrogram(fft(x))
+
+
+
+%%%%%%%%%%%%%image processing%%%%%%%%%%%%
+
+%%%%%%%%%%%%%Probability%%%%%%%%%%%%
