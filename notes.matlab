@@ -75,11 +75,71 @@ rmfield()
 setfield()
 
 
-%
+% structure
 
-my_struct.name = "Thomas"
-class("Thomas") % name
+my_struct.name = 'Thomas'
+class('Thomas') % name
 class(my_struct.name) % char
 class(my_struct) % struct
 
+S = struct('name', 'Thomas', 'age', 20)
 
+% cell (the ultimate dictionary)
+
+my_cell{1} = 'Hello'
+my_cell{'A'} = 6
+
+
+% plot
+
+x = [1:10]
+y = x*log(x)
+plot(x, y)
+
+openfig('name')
+
+% linspace(start, end, points)
+
+linspace()
+
+% plot multiple functions together
+
+plot(X1, Y1, '--', X2, Y2, '.')
+
+% bar charts
+
+x = 1:10
+
+bar(x)
+
+% hist(x, categoryies)
+
+x = randn(1000, 1)
+
+hist(x, 50)
+
+% pie charts
+
+pie()
+
+% scatter plot (not ordered)
+
+scatter(x, y)
+
+
+
+% data opening/storing
+
+% excel
+	help xlsread
+	help xlswrite
+
+% csv
+csvread
+csvwrite('name.csv', A)
+
+% .mat
+
+save('my_workspace.mat')
+
+load('my_workspace.mat')
