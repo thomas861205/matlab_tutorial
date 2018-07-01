@@ -176,6 +176,30 @@ contour(z) % 2D with colors
 
 %%%%%%%%sound processing%%%%%%%%
 
+% audacity : software
+
+d = wavread()
+or 
+audioread() % other than .wav
+plot(d)
+
+wavwrite('.wav', d, fs)
+
+% fs: sampling rate
+[d, fs] = wavread('.wav')
+sound(d, fs) % play sound
+
+% reverse
+
+flipud()
+% fliplr()
+
+% speed up (down sampling)
+
+d4 = downsample(d, 2)
+	
+	% slow down
+	sound(d4, fs/2)
 
 
-
+% FFT
