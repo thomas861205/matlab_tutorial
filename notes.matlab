@@ -1,5 +1,6 @@
 %MATLAB's number start at 1, unlike other programming language start with 0
-
+clc % clean line
+clear % clean variables
 %submatrix
 A = [1 2 3; 4 5 6; 7 8 9]
 
@@ -216,3 +217,5 @@ spectrogram(fft(x))
 %%%%%%%%%%%%%image processing%%%%%%%%%%%%
 
 %%%%%%%%%%%%%Probability%%%%%%%%%%%%
+
+
