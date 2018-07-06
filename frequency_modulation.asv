@@ -1,0 +1,18 @@
+% unmodulated carrier peak amplitude
+Ac = 1;
+
+% carrier frequency
+fc = 100;
+
+% modulation frequency
+fm  = 5;
+
+% modulation index
+m = 0.7;
+
+L = 1000;
+t = (0: L-1)/fc;
+y = Ac*cos(2*pi*fc*t - m*sin(2*pi*fm*t) );
+
+plot(t, y);
+axis([0, ]);
