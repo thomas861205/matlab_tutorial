@@ -1,0 +1,6 @@
+L
+ = 2*pi;
+x = linspace(0, L, 100);
+y = sin(x);
+
+plot(x, y);
